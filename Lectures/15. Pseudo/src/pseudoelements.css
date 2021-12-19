@@ -1,0 +1,57 @@
+.block-1 {
+	color: red;
+}
+
+.block-1::first-letter {
+	color: green;
+	font-size: 25px;
+	background: red;
+}
+
+.block-2::before {
+	content: '+7';
+}
+
+.block-3 {
+	position: relative;
+	display: flex;
+}
+
+.block-3 > input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	margin: 0;
+}
+
+.checkbox-mark {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #787878;
+}
+
+
+.block-3 > input:checked + .checkbox-mark::after {
+	content: '✓';
+	position: absolute;
+	color: #787878;
+	top: 2px;
+	left: 4px;
+}
+
+
+.block-4::selection {
+	background: blue;
+	color: white;
+}
+
+.block-5 > input {
+	color: green;
+}
+
+.block-5 > input::placeholder {
+	color: red;
+}

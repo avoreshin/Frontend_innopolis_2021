@@ -1,0 +1,99 @@
+.button {
+	outline: none;
+	border: none;
+	background-color: red;
+	padding: 5px 7px;
+	border-radius: 5px;
+	transition: .2s background-color;
+}
+
+.button:hover {
+	background-color: rgba(255, 0, 0, 0.7);
+}
+
+.button:focus {
+	background: lime;
+}
+
+.paragraph {
+	color: #787878;
+}
+
+.paragraph:active {
+	color: green;
+}
+
+.link {
+	color: red;
+	display: block;
+}
+
+.link:active {
+	color: orange;
+}
+
+.link:visited {
+	color: yellow;
+}
+
+.link:focus {
+	outline: none;
+	background: #ccc;
+	border-radius: 5px;
+}
+
+
+.block,
+.block-2 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block__elem,
+.block-2__elem {
+	width: 40px;
+	height: 40px;
+	background: red;
+	margin: 20px;
+}
+
+.block__elem:first-child {
+	background: magenta;
+}
+
+.block__elem:nth-child(2n + 2) {
+	background: blue;
+}
+
+.block__elem:last-child {
+	background: purple;
+}
+
+.block__elem:nth-last-child(3) {
+	background: yellow;
+}
+
+.block__elem:nth-last-child(2n + 1) {
+	background: black;
+}
+
+
+.block-2__elem:first-of-type {
+	background: lime;
+}
+
+.block-2__elem:nth-of-type(2n + 1) {
+	background: orange;
+}
+
+
+.block-2__elem:last-of-type {
+	background: black;
+}
+
+.block-2__elem:nth-last-of-type(2) {
+	background: magenta;
+}
+
+
+

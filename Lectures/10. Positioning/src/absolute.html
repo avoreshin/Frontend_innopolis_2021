@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 10. Positioning. Absolute</title>
+	<style>
+		body {
+			position: relative;
+		}
+		.block {
+			height: 100px;
+			background: red;
+			margin: 20px 0;
+		}
+
+		.block_absolute {
+			background: green;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			margin: 0;
+			top: 0;
+			right: 40px;
+			z-index: 1;
+		}
+
+		.block_absolute_2 {
+			background: lime;
+			z-index: 1;
+			right: 35px;
+		}
+
+		.block_relative {
+			background: yellow;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div class="block"></div>
+	<div class="block"></div>
+	<div class="block block_relative">
+		<div class="block block_absolute"></div>
+		<div class="block block_absolute block_absolute_2"></div>
+	</div>
+	<div class="block"></div>
+	<div class="block"></div>
+</body>
+</html>

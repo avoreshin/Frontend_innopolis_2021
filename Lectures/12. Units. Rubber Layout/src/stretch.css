@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.block {
+	width: 48%;
+	background: lime;
+	margin-top: 20px;
+}
+
+.block.block_type_1 {
+	width: 20%;
+	min-width: 80px;
+	max-width: 90px;
+}
+
+.block.block_type_2 {
+	width: 78%;
+}
